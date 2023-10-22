@@ -984,8 +984,8 @@ body.lock {
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
+    align-items: left;
+    padding: 20px 20px;
     margin: 0;
   }
 }
@@ -1031,6 +1031,29 @@ body.lock {
     margin-bottom: 5px;
   }
 }
+.price__offer {
+  height: 70%;
+}
+@media (max-width: 767.98px) {
+  .price__offer {
+    max-width: 70%;
+  }
+  .price__offer p {
+    -moz-text-align-last: left;
+         text-align-last: left;
+  }
+}
+.price__cost {
+  display: flex;
+  flex-direction: column;
+  height: 30%;
+  justify-content: end;
+}
+@media (max-width: 767.98px) {
+  .price__cost {
+    max-width: 30%;
+  }
+}
 .price__description {
   text-align: center;
   font-size: 18px;
@@ -1053,10 +1076,9 @@ body.lock {
 }
 @media (max-width: 991.98px) {
   .price__text {
-    height: 40px;
-    font-size: 40px;
+    font-size: 15px;
     line-height: 100%;
-    letter-spacing: 1.44px;
+    letter-spacing: 0.5px;
   }
 }
 @media (max-width: 767.98px) {

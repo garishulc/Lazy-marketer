@@ -735,8 +735,8 @@ body.lock {
       flex-direction: row;
       width: 100%;
       justify-content: space-between;
-      align-items: center;
-      padding: 20px 40px;
+      align-items: left;
+      padding: 20px 20px;
       margin: 0;
     }
     @media (max-width: $md4+px) {
@@ -772,6 +772,24 @@ body.lock {
       margin-bottom: 5px;
     }
   }
+  &__offer {
+    height: 70%;
+    @media (max-width: $md3+px) {
+      max-width: 70%;
+      & p {
+        text-align-last: left;
+      }
+    }
+  }
+  &__cost {
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    justify-content: end;
+    @media (max-width: $md3+px) {
+      max-width: 30%;
+    }
+  }
   &__description {
     @media (max-width: $md2+px) {
       font-size: 16px;
@@ -790,10 +808,9 @@ body.lock {
     line-height: 124%;
     letter-spacing: 0.44px;
     @media (max-width: $md2+px) {
-      height: 40px;
-      font-size: 40px;
+      font-size: 15px;
       line-height: 100%;
-      letter-spacing: 1.44px;
+      letter-spacing: 0.5px;
     }
     @media (max-width: $md3+px) {
       height: 20px;
@@ -806,6 +823,8 @@ body.lock {
     position: relative;
     left: 4px;
     bottom: 6px;
+    @media (max-width: $md2+px) {
+    }
     @media (max-width: $md3+px) {
       font-size: 14px;
       bottom: 5px;
