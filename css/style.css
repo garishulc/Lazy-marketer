@@ -937,16 +937,18 @@ body.lock {
   height: 300px;
   justify-content: center;
 }
-.price__cell:first-child:hover {
-  translate: 22px;
-}
-.price__cell:hover {
-  transform: scale(1.3);
-  transition: 0.5s;
-  background-color: #fff;
-}
-.price__cell:last-child:hover {
-  translate: -22px;
+@media (min-width: 1072px) {
+  .price__cell:first-child:hover {
+    translate: 22px;
+  }
+  .price__cell:hover {
+    transform: scale(1.3);
+    transition: 0.5s;
+    background-color: #fff;
+  }
+  .price__cell:last-child:hover {
+    translate: -22px;
+  }
 }
 @media (max-width: 767.98px) {
   .price__cell {
@@ -971,6 +973,11 @@ body.lock {
   width: 100%;
   height: 100%;
   padding: 15px 5px;
+}
+@media (max-width: 991.98px) {
+  .price__cell-content {
+    padding: 10px 5px;
+  }
 }
 @media (max-width: 767.98px) {
   .price__cell-content {
@@ -1000,6 +1007,11 @@ body.lock {
   line-height: 80%;
   letter-spacing: 0.64px;
 }
+@media (max-width: 991.98px) {
+  .price__subtitle {
+    font-size: 16px;
+  }
+}
 @media (max-width: 767.98px) {
   .price__subtitle {
     height: 40px;
@@ -1023,6 +1035,12 @@ body.lock {
   text-align: center;
   font-size: 18px;
   line-height: normal;
+}
+@media (max-width: 991.98px) {
+  .price__description {
+    font-size: 16px;
+    line-height: 120%;
+  }
 }
 .price__text {
   text-align: center;
