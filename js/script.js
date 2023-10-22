@@ -18,7 +18,7 @@ $(document).ready(function () {
   $("nav li a").click(function () {
     elementClick = $(this).attr("href");
     //для смещения позиции вертикальной  точки перемещенния добавляем к параметру (top - 125) - в пикселя
-    destination = $(elementClick).offset().top - 125;
+    destination = $(elementClick).offset().top - 150;
     $("body,html").animate({ scrollTop: destination }, 800);
   });
   $(function (a) {
