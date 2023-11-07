@@ -84,9 +84,11 @@ body.lock {
   &__menu-logo {
     flex: 0 0 32px;
     z-index: 3;
-    img:hover {
-      transform: scale(1.5);
-      transition: 0.5s;
+    @media (min-width: $md2+px) {
+      img:hover {
+        transform: scale(1.5);
+        transition: 0.5s;
+      }
     }
   }
   &__menu-logo img {
@@ -378,13 +380,16 @@ body.lock {
     font-size: 16px;
     margin: 0 auto 0;
   }
-  &:hover {
-    text-shadow: 0.1px 0.1px 1px #f33b1f;
-    box-shadow: 0.5px 0.5px 15px #f33b1f;
-    transform: scale(1.3);
-    transition: 1s;
-    translate: 20px;
+  @media (min-width: $md1+px) {
+    &:hover {
+      text-shadow: 0.1px 0.1px 1px #f33b1f;
+      box-shadow: 0.5px 0.5px 15px #f33b1f;
+      transform: scale(1.3);
+      transition: 1s;
+      translate: 20px;
+    }
   }
+
   @media (max-width: $md3+px) {
     &:hover {
       text-shadow: none;
@@ -735,9 +740,11 @@ body.lock {
       flex-direction: row;
       width: 100%;
       justify-content: space-between;
-      align-items: left;
-      padding: 20px 20px;
+      align-items: center;
+      display: flex;
+      padding: 5px 10px;
       margin: 0;
+      height: 95px;
     }
     @media (max-width: $md4+px) {
       flex-direction: column;
@@ -759,14 +766,10 @@ body.lock {
       font-size: 16px;
     }
     @media (max-width: $md3+px) {
-      height: 40px;
-      font-size: 28px;
-      line-height: 100%;
-      letter-spacing: 0.64px;
-    }
-    @media (max-width: $md3+px) {
       height: 20px;
       font-size: 20px;
+      line-height: 100%;
+      letter-spacing: 0.64px;
     }
     @media (max-width: $md4+px) {
       margin-bottom: 5px;
@@ -775,7 +778,7 @@ body.lock {
   &__offer {
     height: 70%;
     @media (max-width: $md3+px) {
-      max-width: 70%;
+      max-width: 60%;
       & p {
         text-align-last: left;
       }
@@ -787,7 +790,12 @@ body.lock {
     height: 30%;
     justify-content: end;
     @media (max-width: $md3+px) {
-      max-width: 30%;
+      max-width: 40%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      justify-content: space-around;
+      align-items: flex-end;
     }
   }
   &__description {
@@ -798,6 +806,9 @@ body.lock {
     text-align: center;
     font-size: 18px;
     line-height: normal;
+    @media (max-width: $md3+px) {
+      text-align: left;
+    }
   }
   &__text {
     text-align: center;
@@ -814,7 +825,7 @@ body.lock {
     }
     @media (max-width: $md3+px) {
       height: 20px;
-      font-size: 22px;
+      font-size: 20px;
     }
   }
   &__rub {
@@ -839,9 +850,8 @@ body.lock {
   }
   position: relative;
   @media (max-width: $md4+px) {
-    margin-top: 20px;
-    margin-bottom: 60px;
-    padding-left: 0px;
+    margin: 20px 0px 60px 0px;
+    padding: 0px 0px;
   }
 }
 .itc-slider-wrapper {
@@ -852,6 +862,8 @@ body.lock {
   display: flex;
   transition: transform 0.5s ease;
   will-change: transform;
+  gap: 10px;
+  margin: 0 10px;
 }
 .itc-slider-item {
   flex: 0 0 100%;
