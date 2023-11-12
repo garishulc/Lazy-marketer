@@ -539,9 +539,10 @@ body.lock {
     justify-content: space-between;
     margin: 70px auto 90px;
     align-items: center;
+    position: relative;
     @media (max-width: $md3+px) {
       flex-direction: column;
-      margin: 20px auto 0;
+      margin: 50px auto 0;
     }
     @media (max-width: $md4+px) {
       margin: 40px auto 0;
@@ -553,17 +554,24 @@ body.lock {
     }
   }
   &__subtitle {
-    display: inline-block;
+    display: inline-flex;
     background: #e94d35;
     border-radius: 0px;
     padding: 14px 20px;
     margin-bottom: 40px;
+    @media (max-width: $md3+px) {
+      padding: 5px 20px;
+      display: flex;
+      justify-content: center;
+    }
   }
   &__text {
     font-size: 25px;
     line-height: 124%;
     letter-spacing: 1.44px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+    text-align: justify;
+
     @media (max-width: $md2+px) {
       font-size: 24px;
     }
@@ -571,12 +579,25 @@ body.lock {
       font-size: 20px;
     }
   }
+  &__price-block {
+    display: inline-block;
+    float: right;
+    padding: 14px 20px;
+    background-color: #161513;
+    margin-right: 0px;
+    margin-left: auto;
+    @media (max-width: $md2+px) {
+      // max-width: 240px;
+      padding: 5px 20px;
+    }
+  }
   &__text-price {
+    color: #fff;
     font-size: 25px;
     line-height: 150%;
     letter-spacing: 1.44px;
     text-align: right;
-    font-weight: 600;
+    font-weight: 400;
     @media (max-width: $md2+px) {
       font-size: 24px;
     }
@@ -608,7 +629,7 @@ body.lock {
     @media (max-width: $md3+px) {
       font-size: 25px;
       margin-top: 5px;
-      margin-bottom: 5px;
+      margin-bottom: 20px;
     }
   }
 }
