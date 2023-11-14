@@ -167,7 +167,7 @@ body.lock {
 .page {
   padding: 120px 0px 0px 0px;
   flex: 1 1 auto;
-  background-image: url("../../img/bg.jpg");
+  background-image: url("../img/bg.jpg");
 }
 @media (max-width: 767.98px) {
   .page {
