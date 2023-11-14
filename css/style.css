@@ -167,6 +167,7 @@ body.lock {
 .page {
   padding: 120px 0px 0px 0px;
   flex: 1 1 auto;
+  background-image: url("../../img/bg.jpg");
 }
 @media (max-width: 767.98px) {
   .page {
@@ -248,7 +249,7 @@ body.lock {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #c4c4c4;
+  background-color: #a3a3a3;
   z-index: 2;
 }
 
@@ -554,6 +555,7 @@ body.lock {
   display: inline-flex;
   padding: 15px 33px;
   transition: all 0.3s ease 0s;
+  position: relative;
 }
 @media (max-width: 991.98px) {
   .btn {
@@ -571,7 +573,7 @@ body.lock {
 @media (min-width: 1072px) {
   .btn:hover {
     text-shadow: 0.1px 0.1px 1px #f33b1f;
-    box-shadow: 0.5px 0.5px 15px #f33b1f;
+    box-shadow: 5px 5px 5px #161513;
     transform: scale(1.3);
     transition: 1s;
     translate: 20px;
@@ -992,7 +994,7 @@ body.lock {
 }
 
 .call {
-  background: #e6e3de;
+  background: #a3a3a3;
   padding: 50px 0px;
 }
 @media (max-width: 479.98px) {
