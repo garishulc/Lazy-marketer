@@ -232,7 +232,7 @@ body.lock {
   flex: 0 0 32px;
   z-index: 3;
 }
-@media (min-width: 991.98px) {
+@media (min-width: 991.98px) and (hover: hover) and (pointer: fine) {
   .header__menu-logo img:hover {
     transform: scale(1.5);
     transition: 0.5s;
@@ -299,7 +299,7 @@ body.lock {
   color: #161513;
   transition: all 0.3s ease 0s;
 }
-@media (min-width: 767.98px) {
+@media (min-width: 767.98px) and (hover: hover) and (pointer: fine) {
   .menu__link:hover {
     color: #e94d35;
     border-bottom: 2px solid #e94d35;
@@ -570,7 +570,7 @@ body.lock {
     margin: 0 auto 0;
   }
 }
-@media (min-width: 1072px) {
+@media (min-width: 1072px) and (hover: hover) and (pointer: fine) {
   .btn:hover {
     text-shadow: 0.1px 0.1px 1px #f33b1f;
     box-shadow: 5px 5px 5px #161513;
@@ -579,7 +579,7 @@ body.lock {
     translate: 20px;
   }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 767.98px) and (hover: hover) and (pointer: fine) {
   .btn:hover {
     text-shadow: none;
     box-shadow: none;
@@ -636,7 +636,7 @@ body.lock {
 .blackline__text a {
   color: #fff;
 }
-@media (min-width: 1072px) {
+@media (min-width: 1072px) and (hover: hover) and (pointer: fine) {
   .blackline__text a:hover {
     display: block;
     color: #e94d35;
@@ -997,18 +997,23 @@ body.lock {
   background: #a3a3a3;
   padding: 50px 0px;
 }
+@media (max-width: 991.98px) {
+  .call {
+    padding: 30px 0;
+  }
+}
 @media (max-width: 479.98px) {
   .call {
     padding: 20px 15px 30px;
-    max-height: 300px;
   }
 }
 .call__body {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 479.98px) {
+@media (max-width: 767.98px) {
   .call__body {
+    gap: 1em;
     flex-direction: column;
     height: 100%;
   }
@@ -1016,14 +1021,20 @@ body.lock {
 .call__text {
   color: #161513;
   font-size: 40px;
-  line-height: 139%;
+  line-height: 115%;
   flex: 1 1 60%;
+}
+@media (max-width: 767.98px) {
+  .call__text {
+    text-align: center;
+  }
 }
 @media (max-width: 479.98px) {
   .call__text {
     text-align: center;
     flex: 1 1 50%;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    font-size: 34px;
   }
 }
 .call__social {
@@ -1034,7 +1045,14 @@ body.lock {
   justify-content: space-between;
   align-items: center;
 }
-@media (min-width: 991.98px) {
+@media (max-width: 767.98px) {
+  .call__social {
+    justify-content: center;
+    gap: 1em;
+    flex: 1 1 80px;
+  }
+}
+@media (min-width: 991.98px) and (hover: hover) and (pointer: fine) {
   .call__social a:hover {
     transform: scale(1.5);
     transition: 0.7s;
