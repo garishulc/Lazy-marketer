@@ -1,2 +1,3 @@
 # LM
-посмотреть пример [https://garishulc.github.io/LM/] 
+глянуть результат, можно тут
+[https://garishulc.github.io/Lazy-marketer/]
