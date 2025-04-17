@@ -18,13 +18,13 @@ $(document).ready(function () {
   $("nav li a").click(function () {
     elementClick = $(this).attr("href");
     //для смещения позиции вертикальной  точки перемещенния добавляем к параметру (top - 125) - в пикселя
-    destination = $(elementClick).offset().top - 150;
-    $("body,html").animate({ scrollTop: destination }, 800);
+    destination = $(elementClick).offset().top  -200;
+    $("body,html").animate({ scrollTop: destination }, 100);
   });
   $(function (a) {
     // при клике на ссылку плавно поднимаемся вверх
     $("#back-top a").click(function () {
-      $("body,html").animate({ scrollTop: 0 }, 800);
+      $("body,html").animate({ scrollTop: 0 }, 100);
       return false;
     });
   });

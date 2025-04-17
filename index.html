@@ -6,8 +6,14 @@
   <meta name="format-detaction" content="telephone=no">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- краткое описание страницы - здесь мы указываем краткое описание, о чем он. до 140 символов -->
+  <meta name="description" content="Привет, меня зовут Давид. Я ленивый маркетолог. Маркетинг, как вареники - легко, быстро, вкусно.">
+  <!-- ключевые слова:указываем слова, либо словосочетания через запятую которые характеризуют контент на нашей странице. слов должно быть не больше 20   -->
+  <meta name="keywords" content="ленивый маркетолог, маркетинг как вареники, быстро, легко, текст, видео контент, креаторство, консультация, сопровождение, подготовка текстов, консультация SMM, полное сопровождение SMM">
+  <!-- доступ поисковых роботов к нашей странице: значением может быть одно или несколько свойств -->
+  <meta name="robots" content="Маркетолог">
   <title>Ленивый Маркетолог</title>
-  <link rel="shortcut icon" href="img/avatar__black_white.jpg">
+  <link rel="shortcut icon" href="img/white_black.JPEG">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/itc-slider.css">
 </head>
@@ -29,7 +35,6 @@
             <ul class="menu__list">
               <li><a href="#aboutme" class="menu__link">Обо мне</a></li>
               <li><a href="#services" class="menu__link">Услуги</a></li>
-              <li><a href="#price" class="menu__link">Прайс</a></li>
               <li><a href="#call" class="menu__link">Контакты</a></li>
             </ul>
           </nav>
@@ -57,7 +62,7 @@
             </div>
           </div>
           <div class="hello__avatar">
-            <img src="img/avatar__black_white.jpg" alt="">
+            <img src="img/white_black.JPEG" alt="">
           </div>
         </div>
       </section>
@@ -68,18 +73,19 @@
               <li class="blackline__img">
                 <img src="img/star.svg" alt="">
               </li>
-              <li class="blackline__text">консультация</li>
-              <li class="blackline__img">
-                <img src="img/star.svg" alt="">
-              </li>
-              <li class="blackline__text">реклама</li>
-              <li class="blackline__img"><img src="img/star.svg" alt=""></li>
-              <li class="blackline__text">посты</li>
-              <li class="blackline__img"><img src="img/star.svg" alt=""></li>
-              <li class="blackline__text">продвижение</li>
-              <li class="blackline__img"><img src="img/star.svg" alt=""></li>
-              <li class="blackline__text">ведение</li>
-              <li class="blackline__img"><img src="img/star.svg" alt=""></li>
+              <li class="blackline__text"><a href="#text">текст</a></li>
+              <li class="blackline__img"><img src="img/star.svg" alt="star.svg"></li>
+              <li class="blackline__text"><a href="#videocontent">видео контент</a></li>
+              <li class="blackline__img"><img src="img/star.svg" alt="star.svg"></li>
+              <li class="blackline__text"><a href="#createring">креаторство</a>
+                </li>
+              <li class="blackline__img"><img src="img/star.svg" alt="star.svg"></li>
+              <li class="blackline__text"><a href="#consultation">консультация</a>
+                </li>
+              <li class="blackline__img"><img src="img/star.svg" alt="star.svg"></li>
+              <li class="blackline__text"><a href="#accompaniment">сопровождение</a>
+                </li>
+              <li class="blackline__img"><img src="img/star.svg" alt="star.svg"></li>
             </ul>
           </div>
         </div>
@@ -121,7 +127,7 @@
             </div>
           </div>
       </section>
-      <section title="" class="services">
+      <section class="services">
         <div class="services__container _container">
           <div class="services__img-snowflake">
             <img src="img/snowflake.svg" alt="">
@@ -131,172 +137,71 @@
           </div>
           <div id="services" class="services__body">
             <div class="services__content">
-              <div class="services__line">
+              <div class="services__line" id="text" >
                 <div class="services__img">
                   <img src="img/copywriting.svg" alt="">
                 </div>
                 <div class="services__content">
-                  <p class="services__subtitle subtitle">Копирайтинг</p>
-                  <p class="services__text">Напишу для тебя текст.</p>
+                  <p class="services__subtitle subtitle">Подготовка текстов</p>
+                  <p class="services__text">Я могу написать текст для аккаунта, блога или сайта независимо от вашей ниши. Длина текста зависит от формата, задач и площадки, для которой он предназначен. Естественно можно вносить несколько правок.</p>
+                  <div class="services__price-block"><p class="services__text-price">1 пост/<span class="services__text-value">800</span><span class="services__text-currency">₽</span>*</p>
+                  <p class="services__text-price">12 постов/<span class="services__text-value">8 000</span><span class="services__text-currency">₽</span>*</p></div>
+                  
                 </div>
               </div>
-              <div class="services__line">
+              <div class="services__line" id="videocontent">
                 <div class="services__content">
-                  <p class="services__subtitle subtitle">Контентмейкинг</p>
-                  <p class="services__text">Cниму и смонтирую для тебя видео, рилсы, клипы, сторис.</p>
+                  <p class="services__subtitle subtitle" >Подготовка видео-контента</p>
+                  <p class="services__text">Снимаю и монтирую контент для соцсетей в формате рилсов, коротких интервью или обзорных видео. Главная задача такого контента - прогрев и вовлечение аудитории и продажа ваших услуг, как специалиста. Снимаю на телефон, есть петлички и осветитель для хорошего звука и света.</p>
+                  <div class="services__price-block">
+                    <p class="services__text-price">1 видео/<span class="services__text-value">2 500</span><span class="services__text-currency">₽</span>*</p>
+                  <p class="services__text-price">12 видео/<span class="services__text-value">25 000</span><span class="services__text-currency">₽</span>*</p>
+                  </div>
+                  
                 </div>
                 <div class="services__img">
                   <img src="img/content.svg" alt="">
                 </div>
               </div>
-              <div class="services__line">
+              <div class="services__line" id="createring">
                 <div class="services__img">
                   <img src="img/idea.svg" alt="">
                 </div>
                 <div class="services__content">
-                  <p class="services__subtitle subtitle">Креаторство</p>
-                  <p class="services__text">Придумаю для тебя идеи продвижения.</p>
+                  <p class="services__subtitle subtitle" id="createring">Креаторство</p>
+                  <p class="services__text">Онлайн или офлайн встреча, где на протяжении нескольких часов я предложу идеи для рекламы. Идеи могут, как касаться вашего контента так и использоваться для создания инфоповодов. Важно понимать, что это работает лучше, если вы до этого уже составляли себе контент план и понимаете, как развивать страницу, но вам нужна помощь в креативе.</p>
+                  <div class="services__price-block">
+                    <p class="services__text-price"><span class="services__text-value">15 000</span><span class="services__text-currency">₽</span>*</p>
+                  </div>
+                  
                 </div>
               </div>
-              <div class="services__line">
+              <div class="services__line" id="consultation">
                 <div class="services__content">
-                  <p class="services__subtitle subtitle">SMM</p>
-                  <p class="services__text">Полное сопровождение для твоего проекта.</p>
+                  <p class="services__subtitle subtitle" >Консультация SMM</p>
+                  <p class="services__text">Услуга для тех, кто только делает первые шаги в развитии соцсетей. Если вы хотите начать вести страницу сами, то это то, что вам надо. На встречах расскажу про основные требования и тренды при оформлении аккаунта, механики ведения страницы, приемов сторителлинга, частоты и нюансов выкладки постов.</p>
+                  <div class="services__price-block">
+                   <p class="services__text-price"><span class="services__text-value">12 000</span><span class="services__text-currency">₽*</span></p> 
+                  </div>
+                  
                 </div>
                 <div class="services__img">
-                  <img src="img/smm.svg" alt="">
+                  <img src="img/consultation-big.svg" alt="">
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="price">
-        <div class="price__container">
-          <div class="price__img-snowflake">
-            <img src="img/snowflake.svg" alt="">
-          </div>
-          <div class="price__title">
-            ПРАЙС
-          </div>
-          <div class="price__body" id="price">
-            <div class="price__cell">
-              <div class="price__cell-content">
-                <div class="price__offer">
-                  <p class="price__subtitle">Копирайтинг</p>
-                  <P class="price__description">Подготовка текстов для блогов/сайтов/продаж ≈ 1000 символов
-                  </P>
+              <div class="services__line" id="accompaniment">
+                <div class="services__img">
+                  <img src="img/accompaniment.svg" alt="">
                 </div>
-                <div class="price__cost">
-                  <p class="price__text">1 пост/800<span class="price__rub">₽</span></p>
-                  <p class="price__text">12 постов/8 000<span class="price__rub">₽</span></p>
-                </div>
-              </div>
-            </div>
-            <div class="price__cell">
-              <div class="price__cell-content">
-                <div class="prive__offer">
-                  <p class="price__subtitle">Контентмейкинг</p>
-                  <P class="price__description">Съемка и монтаж видео - длительность в соответствии с задачами
-                  </P>
-                </div>
-                <div class="price__cost">
-                  <p class="price__text">1 видео/2 500<span class="price__rub">₽</span></p>
-                  <p class="price__text">12 видео/25 000<span class="price__rub">₽</span></p>
-                </div>
-
-              </div>
-            </div>
-            <div class="price__cell">
-              <div class="price__cell-content">
-                <div class="price__offer">
-                  <p class="price__subtitle">Креаторство</p>
-                  <P class="price__description">Встреча для генерации идей для продвижения проекта
-                  </P>
-                </div>
-                <div class="price__cost">
-                  <p class="price__text">15 000<span class="price__rub">₽</span></p>
-                </div>
-              </div>
-            </div>
-            <div class="price__cell">
-              <div class="price__cell-content">
-                <div class="price__offer">
-                  <p class="price__subtitle">Консультация</p>
-                  <P class="price__description">Помощь в оформлении и разборе механик ведения страницы
-                  </P>
-                </div>
-                <div class="price__cost">
-                  <p class="price__text">15 000<span class="price__rub">₽</span></p>
-                </div>
-              </div>
-            </div>
-            <div class="price__cell">
-              <div class="price__cell-content">
-                <div class="price__offer">
-                  <p class="price__subtitle">Полное сопровождение</p>
-                  <p class="price__description">Комплекс действий для развития проекта</p>
-                </div>
-                <div class="price__cost">
-                  <p class="price__text">35 000<span class="price__rub">₽/мес.</span></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="itc-slider" data-slider="itc-slider" data-loop="true" data-autoplay="true" data-interval="5000">
-            <div class="itc-slider-wrapper">
-              <div class="itc-slider-items">
-                <div class="itc-slider-item">
-                  <div class="price__cell-content">
-                    <p class="price__subtitle">Копирайтинг</p>
-                    <P class="price__description">Копирайтинг (подготовка текста для блогов/сайтов/продаж ≈ 1000
-                      символов)
-                    </P>
-                    <p class="price__text">1 пост - 800<span class="price__rub">₽</span></p>
-                    <p class="price__text">12 постов - 8 000<span class="price__rub">₽</span></p>
-                  </div>
-                </div>
-                <div class="itc-slider-item">
-                  <div class="price__cell-content">
-                    <p class="price__subtitle">Контентмейкинг</p>
-                    <P class="price__description">Контентмэйкинг (съемка и монтаж видео - длительность в соответствии с
-                      задачами)
-                    </P>
-                    <p class="price__text">1 видео - 2 500<span class="price__rub">₽</span></p>
-                    <p class="price__text">12 видео - 25 000<span class="price__rub">₽</span></p>
-                  </div>
-                </div>
-                <div class="itc-slider-item">
-                  <div class="price__cell-content">
-                    <p class="price__subtitle">Креаторство</p>
-                    <P class="price__description">Креаторство (встреча для генерации идей для продвижения проекта)
-                    </P>
-                    <p class="price__text">15 000<span class="price__rub">₽</span></p>
-                  </div>
-                </div>
-                <div class="itc-slider-item">
-                  <div class="price__cell-content">
-                    <p class="price__subtitle">Консультация</p>
-                    <P class="price__description">Консультация (помощь в оформлении и разборе механик ведения страницы)
-                    </P>
-                    <p class="price__text">15 000<span class="price__rub">₽</span></p>
-                  </div>
-                </div>
-                <div class="itc-slider-item">
-                  <div class="price__cell-content">
-                    <p class="price__subtitle">Полное ведение</p>
-                    <p class="price__text">35 000<span class="price__rub">₽/мес.</span></p>
+                <div class="services__content">
+                  <p class="services__subtitle subtitle">Полное сопровождение SMM</p>
+                  <p class="services__text">Если вы не хотите ломать голову и вам нужен специалист, который сам будет анализировать ЦА, определять маркетинговую стратегию, составлять контент план и ставить конкретные задачи по развитию вашего проекта, то эта услуга для вас.</p>
+                  <div class="services__price-block">
+                    <p class="services__text-price"><span class="services__text-value">35 000</span><span class="services__text-currency">₽</span>*</p>
                   </div>
                 </div>
               </div>
             </div>
-            <ol class="itc-slider-indicators">
-              <li class="itc-slider-indicator" data-slide-to="0"></li>
-              <li class="itc-slider-indicator" data-slide-to="1"></li>
-              <li class="itc-slider-indicator" data-slide-to="2"></li>
-              <li class="itc-slider-indicator" data-slide-to="3"></li>
-              <li class="itc-slider-indicator" data-slide-to="4"></li>
-            </ol>
           </div>
         </div>
       </section>
@@ -313,7 +218,7 @@
       <section id="call" title="" class="call">
         <div class="call__container _container">
           <div class="call__body">
-            <div class="call__text">Чего ждешь? Пиши!</div>
+            <div class="call__text">Не знаешь с чего начать рекламу?<br> Начни с сообщения мне.</div>
             <div class="call__social social">
               <a href="mailto:David.tvorit@gmail.com?subject=%D0%A1%D0%BE%D1%82%D1%80%D1%83%D0%B4%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%BE"
                 class="social__item _icon-mail"></a>
@@ -327,12 +232,11 @@
     </main>
     <footer class="footer">
       <div class="footer__free-icons _container">
-        <a class="footer__free-icons-link" href="https://www.flaticon.com/ru/free-icons/" title="free-icons">Иконки от
-          Uniconlabs - Flaticon.com</a>
+        <p class="footer__cost">* - Цена услуг может измениться в зависимости от условий и отличаться от заявленной на сайте.</p>
+        <a class="footer__free-icons-link" href="https://www.flaticon.com/ru" title="free-icons">Иконки использованные на сайте на бесплатной основе от: Uniconlabs, srip  - Flaticon.com</a>
       </div>
     </footer>
   </div>
-  <script src="js/itc-slider.js"></script>
   <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
   <script src="js/script.js"></script>
 </body>
